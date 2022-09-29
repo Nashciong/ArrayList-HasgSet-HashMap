@@ -7,9 +7,9 @@ public class Act2_hashSet {
     public static void main(String[] agay) {
 
         do {
-            System.out.println("Adding, removing, displaying, clearing, and exit the program of the HashMap.");
+            System.out.println("Adding, removing, displaying, clearing, and exit the program of the HashSet.");
             System.out.println(
-                    "Type A if you will add elments in the array. \nType B if you want to remove elements in the array. \nType C if you want to display the elements of an array. \nType D if you want to clear the elements of the array. \nType E if you want to exit the program. ");
+                    "Type A to Add Numbers. \nType B to Remove Numbers. \nType C to Display Numbers. \nType D to Clear Numbers. \nType E to Exit. ");
 
             char choices[] = new char[] { 'A', 'B', 'C', 'D', 'E' };
             char chosen = input.next().toUpperCase().charAt(0);
@@ -49,18 +49,14 @@ public class Act2_hashSet {
 
     }
 
-    private static int mySet(int i) {
-        return 0;
-    }
-
     static void removeNum(Set<Integer> myList2) {
         myList2 = mySet;
 
         System.out.println(
-                "Removing values in the array starting from index 0 until index 4. These are the array you Stored recently: "
+                "Removing values in the array starting from index 0 until index 4. These are the values you Stored recently: "
                         + myList2);
 
-        System.out.println("Please input the index of the array you want to remove: ");
+        System.out.println("Please input the specific index: ");
         mySet.remove(input.nextInt());
         System.out.println("These are the values after removing: " + myList2);
 
@@ -69,7 +65,7 @@ public class Act2_hashSet {
     static void displayNum(Set<Integer> myList2) {
         myList2 = mySet;
 
-        System.out.println("These are the values of the array named mySet: " + myList2);
+        System.out.println("These are the values of the HashSet named mySet: " + myList2);
 
         for (Integer newList : myList2) {
             System.out.println(newList);
@@ -78,10 +74,10 @@ public class Act2_hashSet {
 
     static void clearNum(Set<Integer> myList2) {
         myList2 = mySet;
-        System.out.println("These are the values of the array named mySet: " + myList2);
-        System.out.println("Now we are going to clear all the elements of the array.");
+        System.out.println("These are the values of the HashSet named mySet: " + myList2);
+        System.out.println("Now we are going to clear all the elements of the HashSet.");
         mySet.removeAll(myList2);
-        System.out.println("After removing all of the elements in array: " + myList2);
+        System.out.println("After removing all of the elements in the HashSet: " + myList2);
 
     }
 

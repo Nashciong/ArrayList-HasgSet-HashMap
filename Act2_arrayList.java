@@ -8,9 +8,9 @@ public class Act2_arrayList {
     public static void main(String[] agay) {
 
         do {
-            System.out.println("Adding, removing, displaying, clearing, and exit the program of the HashMap.");
+            System.out.println("Adding, removing, displaying, clearing, and exit the program of the ArrayList.");
             System.out.println(
-                    "Type A if you will add elments in the array. \nType B if you want to remove elements in the array. \nType C if you want to display the elements of an array. \nType D if you want to clear the elements of the array. \nType E if you want to exit the program. ");
+                    "Type A to Add Numbers. \nType B to Remove Numbers. \nType C to Display Numbers. \nType D to Clear Numbers. \nType E to Exit. ");
 
             char choices[] = new char[] { 'A', 'B', 'C', 'D', 'E' };
             char chosen = input.next().toUpperCase().charAt(0);
